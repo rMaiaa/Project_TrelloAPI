@@ -4,9 +4,9 @@ import json as js
 class trello:
 
     def __init__ (self):
-        self.key = 'd1ca877043972e85fa7514f64eafffa0'
-        self.token = '06cfead3d9cf5d1be6c4037563f253c14b9f41eda3da0d46edbfd05b9cf1f7d2'
-        self.board = 'gz4bNzuU'
+        self.key = 'INSERT KEY'
+        self.token = 'INSERT TOKEN'
+        self.board = 'ID_BOARD'
 
 
     def getBoard(self):
@@ -33,7 +33,7 @@ class trello:
 
 
     def getCardID(self):
-        self.idCard = '62cc95b1b5e87a01b6e32ae4'
+        self.idCard = 'INSERT_ID'
         
         url = 'https://trello.com/1/boards/' + self.board + '/cards/' + self.idCard + '?key=' + self.key + '&token=' + self.token
 
@@ -47,7 +47,7 @@ class trello:
         print(dic)
 
     def getMember(self):
-        self.member = '62cc8f0b77c4cc1f18fa2268'
+        self.member = 'INSERT_ID'
 
         url = "https://api.trello.com/1/members/" + self.member
 
